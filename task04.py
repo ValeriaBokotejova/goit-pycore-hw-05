@@ -1,15 +1,3 @@
-# Improve the console assistant bot from the previous homework and add error handling using decorators.
-
-# Task requirements:
-# 1. All user input errors should be handled using the input_error decorator. 
-# This decorator is responsible for returning messages to the user like "Enter user name", 
-# "Give me name and phone please", etc.
-# 2. The input_error decorator should handle exceptions that occur in the handler functions, 
-# and these exceptions are: KeyError, ValueError, IndexError. When an exception occurs, 
-# the decorator should return the corresponding response to the user. The program execution 
-# should not stop in this case.
-
-
 def input_error(func): # Decorator for handling user input errors
     def inner(*args, **kwargs):
         try:
